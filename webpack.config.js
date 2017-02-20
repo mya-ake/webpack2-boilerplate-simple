@@ -1,11 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const extractCSS = new ExtractTextPlugin({
-  filename: './css/[name].css',
-  allChunks: true
-});
-const extractSCSS = new ExtractTextPlugin({
+const extractPostCSS = new ExtractTextPlugin({
   filename: './css/[name].css',
   allChunks: true
 });
@@ -29,12 +25,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: extractCSS.extract({
-          use: 'css-loader',
-        }),
-      },
-      {
-        test: /\.scss$/,
+        exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
           use: [
             'css-loader',
@@ -45,8 +36,7 @@ module.exports = {
     ],
   },
   plugins: [
-    extractCSS,
-    extractSCSS,
+    extractPostCSS,
   ],
 };
 

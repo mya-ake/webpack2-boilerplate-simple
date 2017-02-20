@@ -33,7 +33,6 @@ CSSは別ファイルに分けてます。
 * Browsersync
 * Babel
 * PostCSS
-* SASS
 
 
 ## Author
@@ -45,7 +44,7 @@ Twitter:https://twitter.com/mya_ake
 
 ## Version
 
-1.0.0 (February 16, 2017)
+1.1.0 (February 16, 2017)
 
 ## License
 The MIT License (MIT)

@@ -16,6 +16,7 @@ body {
 	letter-spacing: 0.04em;
 }
 
+
 input,
 textarea,
 a,
@@ -23,5 +24,15 @@ button,
 select
 {
 	pointer-events: auto;
+}
+
+
+@define-mixin font $s: 1em {
+	font-size: $s;
+	line-height: 1.6em;
+}
+
+h1 {
+	@mixin font 2em;
 }
 
