@@ -36,7 +36,7 @@ CSSは別ファイルに分けてます。
 
 
 ## Author
-mya-ake
+mya-ake(しぶ、しぶさん)
 
 web:https://mya-ake.com/
 
