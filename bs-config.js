@@ -5,7 +5,7 @@ module.exports = {
       'port': 8080
     }
   },
-  'files': ['./public/css/**/*.css', './public/app.js', './public/**/*.html'],
+  'files': ['./public/**/*.css', './public/**/*.js', './public/**/*.html'],
   'watchEvents': [
     'change'
   ],
