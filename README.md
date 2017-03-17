@@ -14,8 +14,16 @@ or
 
     $ yarn start
 
-Google Chromeが立ち上がってサイトが表示されます。
+デフォルトブラウザが立ち上がってサイトが表示されます。
 この状態でsrc内のファイルに変更があると自動でブラウザが更新されます。
+
+### For Windows
+
+    $ yarn start_win
+
+Windowsだと`&`で繋いでnpm scriptsを実行できないようなので、別コマンドに切り分け。
+※ macでこのコマンドを使った場合`Ctrl + C`を押して`Enter`を押さないと復帰できないので、startコマンドを2つにしました。
+
 
 ## Build
 
@@ -44,7 +52,7 @@ Twitter:https://twitter.com/mya_ake
 
 ## Version
 
-1.1.1 (February 23, 2017)
+1.1.2 (March 18, 2017)
 
 ## License
 The MIT License (MIT)

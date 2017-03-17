@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
-    "start": "concurrently \"cross-env NODE_ENV=development webpack --watch -d\" \"browser-sync start --config bs-config.js\""
+    "start": "cross-env NODE_ENV=development webpack --watch -d & browser-sync start --config bs-config.js",
+    "start_win": "concurrently \"cross-env NODE_ENV=development webpack --watch -d\" \"browser-sync start --config bs-config.js\""
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
