@@ -2,11 +2,16 @@ module.exports = {
   'ui': {
     'port': 3001,
     'weinre': {
-      'port': 8080,
-    },
+      'port': 8080
+    }
   },
-  'files': './public/**/*',
-  'watchOptions': {},
+  'files': ['./public/**/*.css', './public/**/*.js', './public/**/*.html'],
+  'watchEvents': [
+    'change'
+  ],
+  'watchOptions': {
+    'ignoreInitial': true
+  },
   'server': {
     'baseDir': 'public',
     'index': 'index.html',
@@ -21,8 +26,8 @@ module.exports = {
     'forms': {
       'submit': true,
       'inputs': true,
-      'toggles': true,
-    },
+      'toggles': true
+    }
   },
   'logLevel': 'info',
   'logPrefix': 'BS',
@@ -31,11 +36,8 @@ module.exports = {
   'logSnippet': true,
   'rewriteRules': [],
   'open': 'local',
-  'browser': [
-    'google chrome',
-  ],
+  'browser': 'default',
   'cors': false,
-  'https': false,
   'xip': false,
   'hostnameSuffix': false,
   'reloadOnRestart': false,
@@ -63,21 +65,21 @@ module.exports = {
     'input:toggles',
     'form:submit',
     'form:reset',
-    'click',
+    'click'
   ],
   'socket': {
     'socketIoOptions': {
-      'log': false,
+      'log': false
     },
     'socketIoClientConfig': {
-      'reconnectionAttempts': 50,
+      'reconnectionAttempts': 50
     },
     'path': '/browser-sync/socket.io',
     'clientPath': '/browser-sync',
     'namespace': '/browser-sync',
     'clients': {
-      'heartbeatTimeout': 5000,
-    },
+      'heartbeatTimeout': 5000
+    }
   },
   'tagNames': {
     'less': 'link',
@@ -88,6 +90,6 @@ module.exports = {
     'png': 'img',
     'svg': 'img',
     'gif': 'img',
-    'js': 'script',
-  },
+    'js': 'script'
+  }
 };
