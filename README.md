@@ -22,6 +22,7 @@ or
     $ yarn start_win
 
 Windowsだと`&`で繋いでnpm scriptsを実行できないようなので、別コマンドに切り分け。
+
 ※ macでこのコマンドを使った場合`Ctrl + C`を押して`Enter`を押さないと復帰できないので、startコマンドを2つにしました。
 
 
