@@ -43,7 +43,6 @@ CSSは別ファイルに分けてます。
 * Babel
 * PostCSS
 
-
 ## Author
 mya-ake
 
@@ -53,7 +52,7 @@ Twitter:https://twitter.com/mya_ake
 
 ## Version
 
-1.1.2 (March 18, 2017)
+1.2.0 (April 8, 2017)
 
 ## License
 The MIT License (MIT)
