@@ -3,11 +3,14 @@
 }
 
 html {
+	margin: 0;
+	padding: 0;
 	font-size: 62.5%;
   background-color: $c-bg;
 }
 
 body {
+	margin: 0;
   font-size: 1.6rem;
 	backface-visibility: hidden;
 	position: relative;
@@ -36,3 +39,22 @@ h1 {
 	@mixin font 2em;
 }
 
+#app {
+	width: 100vw;
+	height: 100vh;
+	padding: 1.6rem 2.4rem;
+	overflow: hidden;
+	background-image: resolve('../images/fushimi_inari.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#app-title {
+	display: inline-block;
+	background-color: $c-title-bg;
+	padding: 0.8rem 1.6rem;
+	border-radius: 2px;
+	h1, h2 {
+		margin: 0.8rem;
+	}
+}

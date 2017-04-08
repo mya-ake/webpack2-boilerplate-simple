@@ -33,6 +33,13 @@ module.exports = {
           ],
         }),
       },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        exclude: /node_modules/,
+        use: [
+          'file-loader?name=[name].[ext]&outputPath=images/',
+        ],
+      },
     ],
   },
   plugins: [
