@@ -28,7 +28,7 @@ module.exports = {
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
           use: [
-            'css-loader',
+            'css-loader?sourceMap',
             'postcss-loader'
           ],
         }),
